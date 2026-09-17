@@ -35,7 +35,7 @@ Can machine learning reliably forecast whether a programmatic content page will 
 
 ### 3. Baseline
 * **Baseline Specification:** A transparent, rule-based heuristic score ($0$ to $100$) reflecting typical programmatic publishing gates:
-  $$\text{Score}_{\text{heuristic}} = 0.4 \times \min\left(1.0, \frac{\text{word\_count}}{1200}\right) + 0.3 \times \min\left(1.0, \frac{\text{headings\_count}}{6}\right) + 0.3 \times \min\left(1.0, \frac{\text{flesch\_score}}{60}\right)$$
+ Score_heuristic = 0.4 * min(1.0, word_count / 1200) + 0.3 * min(1.0, headings_count / 6) + 0.3 * min(1.0, flesch_score / 60)
 * **Fair Comparison:** Evaluated on the exact same holdout split and identical target threshold used for the machine learning models.
 * **Baseline Performance:**
   * Base rate of target class (successful indexation viability): **34.2%**
